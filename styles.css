@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Manrope:wght@600&family=Noto+Sans+Shavian&family=Nunito&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Manrope:wght@600&family=Montserrat&family=Noto+Sans+Shavian&family=Nunito&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primario: rgb(33, 33, 33);
+    --color-primario2: rgb(247, 247, 247);
+    --color-primario3: rgb(236, 207, 45);
+    --color-primario4: #fff;
+}
+html, body{
+    min-height: 100vh;
+    background-color: var(--color-primario);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*navbar*/
+
+.lf__navTag{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: var(--color-primario);
+}
+
+.lf__navTag .navTag-ulTag{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+.lf__navTag .navTag-ulTag .navTag-ulTag-liTag{
+    list-style: none;
+    text-decoration: none;
+}
+
+.lf__navTag .navTag-ulTag .navTag-ulTag-liTag button{
+    background-color: transparent;
+    border: none;
+}
+
+.lf__navTag .navTag-ulTag .navTag-ulTag-liTag button svg{
+    height: 1.6em;
+    fill: white;
+}
+
+/*header*/
+.lf__headerTag{
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+}
+.lf__headerTag .logo svg{
+    fill: white;
+    height: 1.4em;
+}
+
+/*main*/
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.elementOfCarrousel {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.containerOfCarrousel {
+    display: flex;
+    gap: 1em;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 0 0 2em 0;
+}
+
+.lf__mainTag{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em 4em 1em;
+    background-color:var(--color-primario2);
+    margin: 0 .7em 5em .7em;
+    border-radius: 10px;
+    height: 76vh;
+    overflow-y: auto;
+}
+
+.lf__mainTag .mainTag-header{
+    display: flex;
+    align-items: center;
+}
+
+.lf__mainTag .mainTag-header section.user-info{
+    display: flex;
+    gap: .5em;
+}
+
+.lf__mainTag .mainTag-header section.user-info .user-info__img{
+    border: 2px solid var(--color-primario);
+    border-radius: 50%;
+    height: 3.5em;
+    width: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lf__mainTag .mainTag-header section.user-info .user-info__img svg{
+    height: 3em;
+    fill: var(--color-primario);
+}
+
+.lf__mainTag .mainTag-header section.user-info .user-info__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--color-primario);
+}
+.lf__mainTag .mainTag-header section.user-info .user-info__text .text__updatesCount{
+    display: flex;
+    gap: .2em;
+}
+.lf__mainTag .mainTag-header section.user-info .user-info__text .text__updatesCount .text__updates-img{
+    display: flex;
+    align-items: center;
+}
+.lf__mainTag .mainTag-header section.user-info .user-info__text .text__updatesCount .text__updates-img svg{
+    height: .6em;
+    fill: var(--color-primario3);
+}
+.lf__mainTag .mainTag-header section.user-info .user-info__text .text__updatesCount .text__updates-text{
+    font-size: small;
+}
+
+/*mainTag-body*/
+
+.mainTag-body{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 0 0;
+}
+.mainTag-body .mainTag-body__section-monedas{
+
+}
+.mainTag-body .mainTag-body__section-monedas .section-monedasElement{
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    max-width: max-content;
+    min-width: 5em;
+}
+.monedaCaida{
+    background-color: rgb(255, 101, 101);
+    color: var(--color-primario4)
+}
+.monedaAlza{
+    background-color: rgb(91, 255, 82);
+    color: var(--color-primario4)
+}
+.mainTag-body .mainTag-body__section-monedas .section-monedasElement .monedasElement-header{
+    display: flex;
+    gap: .3em;
+}
+.mainTag-body .mainTag-body__section-monedas .section-monedasElement .monedasElement-header svg{
+    fill: var(--color-primario4);
+}
+.mainTag-body .mainTag-body__section-monedas .section-monedasElement .monedasElement-main{
+    margin: .4em 0 0 0;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.mainTag-body .mainTag-body__section-monedas .section-monedasElement .monedasElement-footer, 
+.mainTag-body .mainTag-body__section-monedas .section-monedasElement .monedasElement-footer .porcent{
+    display: flex;
+    
+}
+.mainTag-body .mainTag-body__section-monedas .section-monedasElement .monedasElement-footer{
+    gap: 1em;
+    font-size: .8em;
+    margin: .3em 0 0 0;
+}
+.mainTag-body .mainTag-body__section-monedas .section-monedasElement .monedasElement-footer svg{
+    fill: var(--color-primario4);
+}
+.mainTag-body .mainTag-body__section-monedas .section-monedasElement .monedasElement-footer .porcent{
+    gap: .4em;
+}
+
+
+@media (width > 770){
+
+}
+
+
