@@ -10,6 +10,7 @@
     --color-primario2: rgb(247, 247, 247);
     --color-primario3: rgb(236, 207, 45);
     --color-primario4: #fff;
+    --color-botones: rgb(139, 201, 255);
 }
 html, body{
     min-height: 100vh;
@@ -76,6 +77,7 @@ html, body{
     gap: 1em;
     flex-wrap: nowrap;
     overflow: scroll;
+    margin: 0 0 0 0;
     padding: 0 0 2em 0;
 }
 
@@ -229,8 +231,8 @@ html, body{
     border: .5px solid grey; 
     color: grey;
     font-size: 10px;
-    border-radius: .7em;
-    padding: .2em;
+    border-radius: 1em;
+    padding: .4em;
 }
 
 .mainTag-body .mainTag-body__sectionDiario .sectionDiario-main{
@@ -287,16 +289,146 @@ html, body{
 
 /*--seccion de novedades*/
 
+.mainTag-body .mainTag-body__sectionNovedades{
+    padding: 0 0 3em 0;
+    margin: .4em 0 0 0;
+}
+
 .mainTag-body .mainTag-body__sectionNovedades .sectionNovedades-element{
-    height: 9em;
+    height: 14em;
     background-color: var(--color-primario4);
     margin: 1em 0 0 0;
     border-radius: 1em;
-    width: 80vw;
+    width: 100%;
+    -webkit-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    position: relative;
 }
 
 .mainTag-body .mainTag-body__sectionNovedades .sectionNovedades-element .element-header{
-    
+    /*background-image: linear-gradient(to right, rgb(122, 5, 122), rgb(201, 14, 201),);*/
+    background-image: linear-gradient(to right, rgb(239, 88, 239), rgb(201, 14, 201),rgb(122, 5, 122));
+    border-radius: 1em 1em 0 0;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: .4em;
+    color: var(--color-primario4);
+}
+
+.mainTag-body .mainTag-body__sectionNovedades .sectionNovedades-element .element-header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .5px solid var(--color-primario4);
+    border-radius: 50%;
+    padding: .4em;
+}
+
+.mainTag-body .mainTag-body__sectionNovedades .sectionNovedades-element .element-header .logo svg{
+    fill: var(--color-primario4);
+}
+
+.mainTag-body .mainTag-body__sectionNovedades .sectionNovedades-element .element-main{
+    height: max-content;
+    padding: 1em 1em 0 1em;
+}
+
+
+.mainTag-body .mainTag-body__sectionNovedades .sectionNovedades-element .element-footer{
+    bottom: 0;
+    margin: 1.3em 1em 1em 1em;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.mainTag-body .mainTag-body__sectionNovedades .sectionNovedades-element .element-footer button{
+    background-color: var(--color-botones);
+    border: none;
+    border-radius: .3em;
+    width: 100%;
+    padding: 1em;
+    color: var(--color-primario4);
+}
+
+/*--secction de ultimos movimientos*/
+
+.mainTag-body .mainTagBody__sectionMovimientos{
+    background-color: var(--color-primario4);
+    border-radius: 1em;
+    padding: 1em;
+    -webkit-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+}
+.mainTag-body .mainTagBody__sectionMovimientos .sectionMovimientos-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainTag-body .mainTagBody__sectionMovimientos .sectionMovimientos-header .text{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+    font-weight: bold;
+    font-size: small;
+    fill: var(--color-botones);
+    color: var(--color-botones);
+}
+
+.mainTag-body .mainTagBody__sectionMovimientos .sectionMovimientos-header .text .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionMovimientos-main{
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.sectionMovimientos-main .sectionMovimientos-main-element{
+    display: flex;
+    align-items: center;
+    margin: 1em 0 0 0;
+    height: min-content; 
+    gap: .5em;
+}
+
+.sectionMovimientos-main .sectionMovimientos-main-element .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: .5px solid rgb(209, 209, 209);
+    padding: .5em;
+}
+
+.sectionMovimientos-main .sectionMovimientos-main-element .texto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sectionMovimientos-main .sectionMovimientos-main-element .texto .texto-dato{
+    display: flex;
+    justify-content: space-between;
+    font-size: .9em;
+}
+
+.sectionMovimientos-main .sectionMovimientos-main-element .texto .texto-dato .nombre{
+    color: grey;
+}
+
+.sectionMovimientos-main .sectionMovimientos-main-element .texto .texto-dato .valor{
+    font-size: .8em;
 }
 
 @media (width > 770){
