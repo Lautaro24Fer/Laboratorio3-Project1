@@ -432,6 +432,96 @@ html, body{
     font-size: .8em;
 }
 
+/*HTML DE MENSAJES*/
+
+.paginaMensajes.lf__mainTag hr{
+    margin: 1em 0 1em 0;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones .historialTransacciones-element{
+    display: grid;
+    grid-template-columns: 20% 40% 10% 20% 10%;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones .historialTransacciones-element .element-foto{
+    border-radius: 100%;
+    border: 1px solid gray;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones .historialTransacciones-element .element-foto svg{
+    height: 1.7em;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones .historialTransacciones-element .element-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones .historialTransacciones-element .element-texto .element-texto-fecha{
+    color: grey;
+}
+
+/* .textWhitEllipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+} */
+
+.operacionRealizada{
+    background-color: rgb(125, 250, 125);
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.operacionEnCurso{
+    background-color: rgb(255, 198, 52);
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones .historialTransacciones-element .element-monto{
+    align-self: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones .historialTransacciones-element .element-button{
+    align-self: center;
+    justify-self: center;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones .historialTransacciones-element .element-button button{
+    border: none;
+    background-color: transparent;
+}
+
+.paginaMensajes.lf__mainTag .lf__messages__historialTransacciones .historialTransacciones-element .element-button button svg{
+    height: 1.2em;
+}
+
+
 
 
 @media (width >= 770px){
