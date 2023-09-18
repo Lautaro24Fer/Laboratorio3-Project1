@@ -78,7 +78,7 @@ html, body{
     flex-wrap: nowrap;
     overflow: scroll;
     margin: 0 0 0 0;
-    padding: 0 0 2em 0;
+    padding: 0 0 1em 0;
 }
 
 .lf__mainTag{
@@ -215,6 +215,7 @@ html, body{
     -webkit-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
     -moz-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
     box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    margin: 2em 0 0 0;
 }
 
 .mainTag-body .mainTag-body__sectionDiario .title{
@@ -288,7 +289,7 @@ html, body{
 /*--seccion de novedades*/
 
 .mainTag-body .mainTag-body__sectionNovedades{
-    padding: 0 0 3em 0;
+    padding: 0 0 1em 0;
     margin: .4em 0 0 0;
 }
 
@@ -362,6 +363,7 @@ html, body{
     -webkit-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
     -moz-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
     box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    margin: 1em 0 0 0;
 }
 .mainTag-body .mainTagBody__sectionMovimientos .sectionMovimientos-header{
     display: flex;
@@ -434,9 +436,27 @@ html, body{
 @media (width >= 770px){
     .gridBody{
         display: grid;
-        grid-template-columns: 20% 80%;    
+        grid-template-columns: 10% 90%;    
         height: 100vh;
-        padding: 1.2em 0 1.2em 0;
+        padding: 1.2em .4em 1.2em 0;
+    }
+    /*--scrollbar*/
+    ::-webkit-scrollbar{
+        display: block;
+        background-color: var(--color-primario2);
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgb(233, 233, 233);
+        height: 10px;
+        border-radius: 10px;
+        transition: .7s;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background-color: rgb(192, 192, 192);
+    }
+    
+    ::-webkit-scrollbar-corner{
+        display: 0;
     }
     /*--header*/
     .lf__headerTag{
@@ -457,7 +477,7 @@ html, body{
     .lf__navTag{
         left: 0;
         top: 0;
-        width: 20%;
+        width: 10%;
         margin: 6em 0 0 0;
     }
 
@@ -476,6 +496,7 @@ html, body{
     /*--main*/
     .lf__mainTag{
         height: 100%;
+        
     }
 }
 
