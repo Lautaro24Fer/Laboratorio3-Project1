@@ -429,8 +429,53 @@ html, body{
     font-size: .8em;
 }
 
-@media (width > 770){
 
+
+@media (width >= 770px){
+    .gridBody{
+        display: grid;
+        grid-template-columns: 20% 80%;    
+        height: 100vh;
+        padding: 1.2em 0 1.2em 0;
+    }
+    /*--header*/
+    .lf__headerTag{
+        height: min-content;
+    }
+    .lf__headerTag .logo{
+        border-radius: 50%;
+        background-color: var(--color-primario4);
+        padding: .5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .lf__headerTag .logo svg{
+        fill: var(--color-primario);
+    }
+    /*--navbar*/
+    .lf__navTag{
+        left: 0;
+        top: 0;
+        width: 20%;
+        margin: 6em 0 0 0;
+    }
+
+    .lf__navTag .navTag-ulTag{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
+
+    .lf__navTag .navTag-ulTag .navTag-ulTag-liTag button svg{
+        height: 2.3em;
+    }
+    
+
+    /*--main*/
+    .lf__mainTag{
+        height: 100%;
+    }
 }
-
 
