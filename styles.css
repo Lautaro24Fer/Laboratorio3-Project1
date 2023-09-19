@@ -680,6 +680,124 @@ html, body{
     gap: .3em;
 }
 
+/*PAGINA DE CONFIGURACION*/
+
+.paginaConfig.lf__mainTag .menuConfiguracion{
+    background-color: var(--color-primario4);
+    border-radius: 1em;
+    -webkit-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.31);
+    padding: 0 0 2em 0;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header{
+    background-color: var(--color-primario);
+    border-radius: 1em;
+    padding: 1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-title{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-title .header-title-logo{
+    background-color: var(--color-primario2);
+    height: min-content;
+    width: min-content;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-title .header-title-logo svg{
+    height: 2.5em;
+    fill: var(--color-primario);
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-title .header-title-text{
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-title .header-title-text .text-subname{
+    display: flex;
+    align-items: center;
+    gap: .2em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-title .header-title-text .text-subname svg{
+    height: .7em;
+    fill: var(--color-primario4);
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-subtitle{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-subtitle .header-subtitle-element{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(18, 18, 18);
+    padding: .4em .5em .4em .5em;
+    border-radius: .5em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-subtitle .header-subtitle-element .header-subtitle-text{
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-subtitle .header-subtitle-element .header-subtitle-text 
+.mainText.myapp{
+    display: flex;
+    align-items: center;
+    gap: .4em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-subtitle .header-subtitle-element .header-subtitle-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-header .header-subtitle .header-subtitle-element .header-subtitle-logo svg{
+    height: 1.5em;
+    fill: var(--color-primario4);
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em 1em 0 1em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-body .config-element{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.paginaConfig.lf__mainTag .menuConfiguracion .menuConfiguracion-body .config-element .logo svg{
+    height: 1.5em;
+    fill: var(--color-primario);
+}
+
 @media (width >= 770px){
     .gridBody{
         display: grid;
